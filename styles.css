@@ -1,0 +1,422 @@
+/* Ploice 
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lato', sans-serif;
+
+ */
+
+/* général */
+
+
+
+a {
+    display: inline-block;
+    text-decoration: none !important;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* header */
+/* header {
+    background: url(images/bgphotshop.png);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+} */
+
+.headerP {
+    background: url(images/bgphotshop.png);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+
+.brand-icon {
+    width: 55px;
+    height: 55px;
+}
+
+.text-intro {
+    padding-top: 300px;
+    padding-bottom: 200px;
+}
+
+.preTxt {
+    font-size: 70px;
+    margin: 0;
+    color: #2f2d2d;
+    line-height: 0.5;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 150px;
+    font-weight: 700;
+    color: #2f2d2d;
+}
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    font-weight: 700;
+    color: #2f2d2d;
+}
+
+h4 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: #2f2d2d;
+}
+
+/* nav */
+
+#main-nav {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.sibling-fade.login a {
+    padding: 0 1rem;
+    transition: opacity 0.4s;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -ms-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+}
+
+.sibling-fade:hover a:not(:hover) {
+    opacity: 0.5;
+}
+
+.navbar-brand {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    font-size: 35px !important;
+    font-family: 'Kaushan Script', cursive !important;
+}
+
+.navbar a {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    color: #fff !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navbar.opaque .navbar-brand {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    font-size: 20px !important;
+}
+
+.navbar.opaque a {
+    font-size: 15px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+/* .btn {
+  border: none;
+  color: #6c757d;
+} */
+
+.btn-bg {
+    color: #fff;
+    background: linear-gradient(to left, #23d5e3, #9149b9) !important;
+}
+
+.btn-bg:hover {
+    color: #fff;
+    background: linear-gradient(to right, #23d5e3, #9149b9) !important;
+}
+
+.dropdown-item {
+    color: #333;
+}
+
+/* article */
+#articleSingle {
+    margin-top: 75px;
+    padding-bottom: 75px;
+}
+
+.article-image {
+    width: 100%;
+}
+
+.index-image {
+    width: 100%;
+    height: 100%;
+}
+
+.login {
+    margin-top: 10px !important;
+}
+
+.login2 {
+    color: #2f2d2d;
+}
+
+.login2:hover {
+    color: #333;
+}
+
+.search-form,
+.search-submit {
+    padding-bottom: 20px;
+    /* border-bottom: 1px dashed #2f2d2d; */
+}
+
+/* a propos */
+
+#aPropos {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    border-bottom: 1px dashed #2f2d2d;
+}
+
+.span-dieter {
+    color: #5397d0 !important;
+}
+
+/* ------ icones ------ */
+#icones {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* ------ banner 1 ------ */
+#banner1 {
+    position: relative;
+    background: url(images/banniere1.png);
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* ------ folio ------ */
+#galerie {
+    padding-bottom: 100px;
+}
+
+.h2Photos {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 70px;
+}
+
+#galerie .container p {
+    padding-bottom: 40px;
+}
+
+.ekko-lightbox-nav-overlay {
+    text-align: center;
+}
+
+.ekko-lightbox-nav-overlay span {
+    color: #2f2d2d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ------ ban2 ------ */
+#banner2 {
+    position: relative;
+    min-height: 300px;
+    background: url(images/banniere1.png);
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#carouselContent {
+    margin-top: 70px;
+    font-size: 25px;
+    color: #2f2d2d;
+    font-weight: 400;
+}
+
+/* ------ ban2 ------ */
+#blog {
+    margin-top: 75px;
+    padding-bottom: 85px;
+}
+
+.blog-presentation {
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+/* Média Queries */
+
+@media screen and (max-width: 991px) {
+    /* Header */
+
+    .headerP {
+        height: 75vh;
+    }
+
+    .text-intro {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    .preTxt {
+        font-size: 40px;
+
+    }
+
+    .titreContact {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 81px;
+
+
+    }
+
+    .blogTitre {
+        font-size: 41px;
+    }
+
+    #formContact {
+        width: 90%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+    /* Header */
+
+    .headerP {
+        height: 65vh;
+    }
+
+    .text-intro {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    .preTxt {
+        font-size: 30px;
+
+    }
+
+    .titreContact {
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 71px;
+
+
+    }
+
+    .blogTitre {
+        font-size: 35px;
+    }
+
+    #formContact {
+        width: 80%;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 575px) {
+    /* Header */
+
+    .headerP {
+        height: 55vh;
+    }
+
+    .text-intro {
+        padding-top: 200px;
+
+    }
+
+    .text-intro a {
+        transform: scale(0.8);
+    }
+
+    .navbar-brand {
+        font-size: 35px !important;
+
+    }
+
+    .preTxt {
+        font-size: 30px;
+
+    }
+
+    .titreContact {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 51px;
+
+
+    }
+
+    .blogTitre {
+        font-size: 25px;
+    }
+
+    #formContact {
+        width: 70%;
+        padding-top: 20px;
+    }
+
+    .pContact {
+        display: none;
+    }
+
+
+
+}

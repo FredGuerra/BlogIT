@@ -1,0 +1,67 @@
+/*========== CLOSE MOBILE NAV ON CLICK ==========*/
+
+$(document).ready(function () { //when document loads completely.
+    $(document).click(function (event) { //click anywhere
+        var clickover = $(event.target); //get the target element where you clicked
+        var _opened = $(".navbar-collapse").hasClass("show"); //check if element with 'navbar-collapse' class has a class called show. Returns true and false.
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) { // if _opened is true and clickover(element we clicked) doesn't have 'navbar-toggler' class
+            $(".navbar-toggler").click(); //toggle the navbar; close the navbar menu in mobile.
+        }
+    });
+});
+
+/*========== SMOOTH SCROLLING TO LINKS ==========*/
+
+$(document).ready(function () { //document is loaded
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) { //click on any link;anchor tag;
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") { //for e.g. website.com#home - #home
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+            //console.log('hash:',hash)
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({ //animate whole html and body elements
+                scrollTop: $(hash).offset().top //scroll to the element with that hash
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash; //website.com - website.com#home
+                //Optional remove "window.location.hash = hash;" to prevent transparent navbar on load
+            });
+        } // End if
+    });
+});
+
+
+// Get the current year for the copyright
+$('#year').text(new Date().getFullYear());
+
+// lightbox ekko
+$(document).on('click', '[data-toggle="lightbox"]',
+    function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+
+    })
+
+// annuler la pause du slider
+$('.carousel').carousel({
+    interval: 3500,
+    pause: 'null'
+})
+
+// changement de barre
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 30) {
+        $('.navbar').addClass('opaque');
+    } else {
+        $('.navbar').removeClass('opaque');
+    }
+});
